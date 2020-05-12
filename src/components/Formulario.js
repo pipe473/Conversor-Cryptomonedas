@@ -42,7 +42,7 @@ const Formulario = () => {
     const [ moneda, SelectMonedas ] = useMoneda('Elige tu moneda', '', MONEDAS);
 
     // Utilizar useCriptomoneda
-    const [ criptomoneda, SelectCripto ] = useCriptomoneda('Elige tu criptomoneda', '');
+    const [ criptomoneda, SelectCripto ] = useCriptomoneda('Elige tu criptomoneda', '', listacripto);
 
     // Ejecutar llamado a la API
     useEffect(() => {
