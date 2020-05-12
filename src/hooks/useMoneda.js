@@ -20,5 +20,3 @@ const useMoneda = () => {
 }
  
 export default useMoneda;
-
-const [moneda, guardarMoneda] = useState();
