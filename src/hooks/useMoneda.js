@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
 
-const useMoneda = (label) => {
+const useMoneda = (label, stateInicial, opcionesMoneda) => {
 
     // State de nuestro custom hook
-    const [state, actualizarState] = useState('');
+    const [state, actualizarState] = useState(stateInicial);
 
 
     const Seleccionar = () => (
