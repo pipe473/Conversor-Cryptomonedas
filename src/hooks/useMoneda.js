@@ -10,7 +10,10 @@ const useMoneda = (label, stateInicial, opcionesMoneda) => {
     <Fragment>
         <label>{label}</label>
         <select>
-            <option value="MXN">Peso Mexicano</option>
+            <option value="">- Seleccione -</option>
+            {opcionesMoneda.map(opcion =>(
+                <option key={opcion.codigo} value={opcion.codigo}>{opcion.nombre}</option>
+            ))}
         </select>
     </Fragment>
     );
