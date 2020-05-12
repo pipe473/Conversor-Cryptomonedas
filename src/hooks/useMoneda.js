@@ -2,6 +2,9 @@ import React, { Fragment, useState } from 'react';
 
 const useMoneda = () => {
 
+    // State de nuestro custom hook
+    const [state, actualizarState] = useState('');
+
 
     const Seleccionar = () => (
     <Fragment>
@@ -12,6 +15,7 @@ const useMoneda = () => {
     </Fragment>
     );
 }
-
  
 export default useMoneda;
+
+const [moneda, guardarMoneda] = useState();
