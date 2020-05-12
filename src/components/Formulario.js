@@ -49,7 +49,7 @@ const Formulario = () => {
         
             const resultado = await axios.get(url);
 
-            console.log(resultado);
+            console.log(resultado.data.Data);
             
         }
 
