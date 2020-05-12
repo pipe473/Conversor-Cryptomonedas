@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 
 import useMoneda from '../hooks/useMoneda';
@@ -27,6 +27,9 @@ const Boton = styled.input`
 
 const Formulario = () => {
 
+    // State del stado de criptomonedas
+    const [ listacripto, guardarCriptomonedas ] = useState([]);
+
     const MONEDAS = [
         {codigo: 'USD', nombre: 'Dolar de Estados Unidos'},
         {codigo: 'MXN', nombre: 'Peso Mexicano'},
@@ -49,7 +52,7 @@ const Formulario = () => {
         
             const resultado = await axios.get(url);
 
-            console.log(resultado.data.Data);
+            guardarCriptomonedas(resultado.data.Data);
             
         }
 
