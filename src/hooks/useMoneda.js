@@ -14,6 +14,9 @@ const useMoneda = () => {
         </select>
     </Fragment>
     );
+
+    // Retornar state, interfaz y funcion que modifica el state
+    return [state, Seleccionar, actualizarState];
 }
  
 export default useMoneda;
