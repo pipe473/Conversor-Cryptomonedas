@@ -1,4 +1,15 @@
 import React, { Fragment, useState } from 'react';
+import styled from '@emotion/styled';
+
+const Label = styled.label`
+    font-family: 'Beba Neue', cursive;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    display: block;
+`
 
 const useMoneda = (label, stateInicial, opcionesMoneda) => {
 
