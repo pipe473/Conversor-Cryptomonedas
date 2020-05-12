@@ -22,7 +22,7 @@ const Boton = styled.input`
         background-color: #326AC0;
         cursor: pointer;
     }
-`
+`;
 
 
 const Formulario = () => {
@@ -36,7 +36,7 @@ const Formulario = () => {
         {codigo: 'EUR', nombre: 'Euro'},
         {codigo: 'GBP', nombre: 'Libra Esterlina'},
         {codigo: 'COP', nombre: 'Peso Colombiano'}
-    ]
+    ];
 
     // Utilizar useMoneda
     const [ moneda, SelectMonedas ] = useMoneda('Elige tu moneda', '', MONEDAS);
