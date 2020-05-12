@@ -53,6 +53,8 @@ const Formulario = () => {
             
         }
 
+        consultarAPI();
+
     }, []);
 
     return ( 
