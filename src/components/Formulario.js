@@ -61,8 +61,18 @@ const Formulario = () => {
 
     }, []);
 
+    // Cuando el usuario hace submit
+    const cotizarMoneda = e => {
+        e.preventDefault();
+
+        // Validar si ambos campos estan llenos
+        
+    }
+
     return ( 
-        <form>
+        <form
+            onSubmit={cotizarMoneda}
+        >
 
             <SelectMonedas />
 
