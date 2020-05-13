@@ -44,6 +44,7 @@ function App() {
 
 const [moneda, guardarMoneda] = useState('');
 const [criptomoneda, guardarCriptomoneda] = useState('');
+const [resultado, guardarResultado] = useState({});
 
 useEffect(() => {
 
@@ -57,7 +58,7 @@ useEffect(() => {
 
     const resultado = await axios.get(url);
 
-    console.log(resultado.data.DISPLAY[criptomoneda][moneda] );    
+    guardarResultado(resultado.data.DISPLAY[criptomoneda][moneda] );    
 
   }
 
