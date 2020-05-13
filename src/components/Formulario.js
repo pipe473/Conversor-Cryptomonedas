@@ -69,7 +69,11 @@ const Formulario = () => {
         if (moneda === '' || criptomoneda === '') {
             guardarError(true);
             return;
+
         }
+        
+        // Pasar los datos al componente principal
+        guardarError(false);
     }
 
     return ( 
