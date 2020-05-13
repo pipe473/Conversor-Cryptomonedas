@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Cotizacion = ({resultado}) => {
-    if(Object.keys(resultado) === 0) return null;
+    if(Object.keys(resultado).length === 0) return null;
 
     console.log(resultado);
     
