@@ -60,13 +60,21 @@ useEffect(() => {
 
     const resultado = await axios.get(url);
 
-    guardarResultado(resultado.data.DISPLAY[criptomoneda][moneda] );    
+    // Mostrar el spinner
+    guardarCargando(true);
+
+    // Ocultar el spinner y mostrar el resultado
+    setTimeout(() => {
+
+      // Cambiar el estado de cargando
+      guardarCargando(false);
+
+      // Guardar cotizacion
+      guardarResultado(resultado.data.DISPLAY[criptomoneda][moneda] ); 
+    }, 3000);       
 
   }
-
   cotizarCriptomoneda();
-  
-
 }, [moneda, criptomoneda]);
 
   return (
