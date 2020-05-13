@@ -66,7 +66,10 @@ const Formulario = () => {
         e.preventDefault();
 
         // Validar si ambos campos estan llenos
-        
+        if (moneda === '' || criptomoneda === '') {
+            guardarError(true);
+            return;
+        }
     }
 
     return ( 
