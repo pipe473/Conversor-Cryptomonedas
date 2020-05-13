@@ -46,6 +46,9 @@ const [criptomoneda, guardarCriptomoneda] = useState('');
 
 useEffect(() => {
 
+  // Evitamos la ejecución la primera vez
+  if (moneda === '') return;
+
 }, [moneda, criptomoneda]);
 
   return (
