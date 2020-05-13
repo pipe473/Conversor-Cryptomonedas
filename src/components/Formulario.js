@@ -29,6 +29,7 @@ const Formulario = () => {
 
     // State del stado de criptomonedas
     const [ listacripto, guardarCriptomonedas ] = useState([]);
+    const [ error, guardarError ] = useState(false);
 
     const MONEDAS = [
         {codigo: 'USD', nombre: 'Dolar de Estados Unidos'},
