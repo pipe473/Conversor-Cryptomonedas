@@ -71,7 +71,7 @@ const Formulario = () => {
             return;
 
         }
-        
+
         // Pasar los datos al componente principal
         guardarError(false);
     }
@@ -80,6 +80,7 @@ const Formulario = () => {
         <form
             onSubmit={cotizarMoneda}
         >
+            {error ? 'Hay un error' : null}
 
             <SelectMonedas />
 
