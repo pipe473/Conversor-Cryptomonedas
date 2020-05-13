@@ -46,6 +46,7 @@ function App() {
 const [moneda, guardarMoneda] = useState('');
 const [criptomoneda, guardarCriptomoneda] = useState('');
 const [resultado, guardarResultado] = useState({});
+const [cargando, guardarCargando] = useState(false);
 
 useEffect(() => {
 
